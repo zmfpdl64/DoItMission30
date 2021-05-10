@@ -68,17 +68,16 @@
                     android:id="@+id/contentsInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLines="1"
-                    android:textSize="32sp"
                     android:hint="내용 입력"
-                    />
+                    android:maxLines="1"
+                    android:textSize="32sp" />
 
                 <ImageView
                     android:id="@+id/pictureImageView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="8dp"
-                    android:src="@drawable/imagetoset" />
+                    android:src="@drawable/dogdog" />
 
             </LinearLayout>
 
@@ -109,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="20dp"
-                app:filledColor="#FF6600"
+                app:filledColor="#FFAC75"
                 app:emptyColor="#a8aeb8"
                 app:rangeCount="5"
                 app:sliderRadiusPercent="0.4"
@@ -126,31 +125,31 @@
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
-                    android:src="@drawable/smile1_48"/>
+                    android:src="@drawable/feeling1"/>
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
-                    android:src="@drawable/smile2_48"/>
+                    android:src="@drawable/feeling2"/>
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
-                    android:src="@drawable/smile3_48"/>
+                    android:src="@drawable/feeling3"/>
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
-                    android:src="@drawable/smile4_48"/>
+                    android:src="@drawable/feeling4"/>
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
-                    android:src="@drawable/smile5_48"/>
+                    android:src="@drawable/feeling5"/>
 
             </LinearLayout>
 

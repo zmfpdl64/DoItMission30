@@ -144,7 +144,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder>
             } else {
                 pictureExistsImageView.setVisibility(View.GONE);
                 pictureImageView.setVisibility(View.GONE);
-                pictureImageView.setImageResource(R.drawable.noimagefound);
+                pictureImageView.setImageResource(R.drawable.dogdog);
 
             }
 
@@ -166,28 +166,28 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder>
         public void setMoodImage(int moodIndex) {
             switch(moodIndex) {
                 case 0:
-                    moodImageView.setImageResource(R.drawable.smile1_48);
-                    moodImageView2.setImageResource(R.drawable.smile1_48);
+                    moodImageView.setImageResource(R.drawable.feeling1);
+                    moodImageView2.setImageResource(R.drawable.feeling1);
                     break;
                 case 1:
-                    moodImageView.setImageResource(R.drawable.smile2_48);
-                    moodImageView2.setImageResource(R.drawable.smile2_48);
+                    moodImageView.setImageResource(R.drawable.feeling2);
+                    moodImageView2.setImageResource(R.drawable.feeling2);
                     break;
                 case 2:
-                    moodImageView.setImageResource(R.drawable.smile3_48);
-                    moodImageView2.setImageResource(R.drawable.smile3_48);
+                    moodImageView.setImageResource(R.drawable.feeling3);
+                    moodImageView2.setImageResource(R.drawable.feeling3);
                     break;
                 case 3:
-                    moodImageView.setImageResource(R.drawable.smile4_48);
-                    moodImageView2.setImageResource(R.drawable.smile4_48);
+                    moodImageView.setImageResource(R.drawable.feeling4);
+                    moodImageView2.setImageResource(R.drawable.feeling4);
                     break;
                 case 4:
-                    moodImageView.setImageResource(R.drawable.smile5_48);
-                    moodImageView2.setImageResource(R.drawable.smile5_48);
+                    moodImageView.setImageResource(R.drawable.feeling5);
+                    moodImageView2.setImageResource(R.drawable.feeling5);
                     break;
                 default:
-                    moodImageView.setImageResource(R.drawable.smile3_48);
-                    moodImageView2.setImageResource(R.drawable.smile3_48);
+                    moodImageView.setImageResource(R.drawable.feeling3);
+                    moodImageView2.setImageResource(R.drawable.feeling3);
                     break;
             }
         }

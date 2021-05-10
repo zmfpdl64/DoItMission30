@@ -297,7 +297,7 @@ public class Fragment2 extends Fragment {
 
             String picturePath = item.getPicture();
             if (picturePath == null || picturePath.equals("")) {
-                pictureImageView.setImageResource(R.drawable.noimagefound);
+                pictureImageView.setImageResource(R.drawable.dogdog);
             } else {
                 setPicture(item.getPicture(), 1);
             }
@@ -314,7 +314,7 @@ public class Fragment2 extends Fragment {
             setDateString(currentDateString);
 
             contentsInput.setText("");
-            pictureImageView.setImageResource(R.drawable.noimagefound);
+            pictureImageView.setImageResource(R.drawable.dogdog);
             setMood("2");
         }
 
