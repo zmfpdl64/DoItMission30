@@ -104,18 +104,17 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
                     android:text="기분 변화"
-                    />
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
                 <com.github.mikephil.charting.charts.LineChart
                     android:id="@+id/chart3"
                     android:layout_width="250dp"
                     android:layout_height="250dp"
+                    android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_gravity="center_horizontal"/>
+                    android:layout_marginBottom="10dp" />
 
             </LinearLayout>
 

@@ -24,7 +24,7 @@
             android:layout_height="54dp"
             android:layout_gravity="center_vertical"
             android:padding="5dp"
-            app:srcCompat="@drawable/smile5_48" />
+            app:srcCompat="@drawable/feeling3" />
 
         <LinearLayout
             android:layout_width="match_parent"
