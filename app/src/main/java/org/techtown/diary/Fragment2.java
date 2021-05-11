@@ -42,6 +42,7 @@ public class Fragment2 extends Fragment {
     TextView locationTextView;
 
     EditText contentsInput;
+
     ImageView pictureImageView;
 
     boolean isPhotoCaptured;
@@ -114,6 +115,7 @@ public class Fragment2 extends Fragment {
         locationTextView = rootView.findViewById(R.id.locationTextView);
 
         contentsInput = rootView.findViewById(R.id.contentsInput);
+
         pictureImageView = rootView.findViewById(R.id.pictureImageView);
         pictureImageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -295,6 +297,8 @@ public class Fragment2 extends Fragment {
             setDateString(item.getCreateDateStr());
             setContents(item.getContents());
 
+
+
             String picturePath = item.getPicture();
             if (picturePath == null || picturePath.equals("")) {
                 pictureImageView.setImageResource(R.drawable.dogdog);
@@ -314,6 +318,7 @@ public class Fragment2 extends Fragment {
             setDateString(currentDateString);
 
             contentsInput.setText("");
+
             pictureImageView.setImageResource(R.drawable.dogdog);
             setMood("2");
         }
@@ -541,6 +546,7 @@ public class Fragment2 extends Fragment {
         String address = locationTextView.getText().toString();
         String contents = contentsInput.getText().toString();
 
+
         String picturePath = savePicture();
 
         String sql = "insert into " + NoteDatabase.TABLE_NOTE +
@@ -550,6 +556,7 @@ public class Fragment2 extends Fragment {
                 "'"+ "" + "', " +
                 "'"+ "" + "', " +
                 "'"+ contents + "', " +
+
                 "'"+ moodIndex + "', " +
                 "'"+ picturePath + "')";
 
@@ -567,6 +574,8 @@ public class Fragment2 extends Fragment {
             String address = locationTextView.getText().toString();
             String contents = contentsInput.getText().toString();
 
+
+
             String picturePath = savePicture();
 
             // update note
@@ -577,6 +586,7 @@ public class Fragment2 extends Fragment {
                     "   ,LOCATION_X = '" + "" + "'" +
                     "   ,LOCATION_Y = '" + "" + "'" +
                     "   ,CONTENTS = '" + contents + "'" +
+
                     "   ,MOOD = '" + moodIndex + "'" +
                     "   ,PICTURE = '" + picturePath + "'" +
                     " where " +

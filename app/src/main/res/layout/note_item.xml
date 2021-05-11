@@ -39,6 +39,10 @@
                 android:layout_height="wrap_content"
                 android:text="내용"
                 android:textSize="24sp" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -56,8 +60,6 @@
                     android:id="@+id/pictureExistsImageView"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_toRightOf="@+id/weatherImageView"
                     android:src="@drawable/picture_128" />
 
                 <TextView
@@ -116,6 +118,11 @@
                 android:layout_height="wrap_content"
                 android:text="내용"
                 android:textSize="24sp" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
 
             <RelativeLayout
                 android:layout_width="match_parent"

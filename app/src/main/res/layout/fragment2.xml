@@ -68,10 +68,17 @@
                     android:id="@+id/contentsInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="내용 입력"
-                    android:maxLines="1"
+                    android:hint="제목 입력"
+                    android:maxLines="3"
                     android:textSize="32sp" />
 
+                <EditText
+                    android:id="@+id/contentxInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="205dp"
+                    android:hint="내용 입력"
+                    android:maxLines="5"
+                    android:textSize="32sp" />
                 <ImageView
                     android:id="@+id/pictureImageView"
                     android:layout_width="match_parent"

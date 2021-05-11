@@ -7,6 +7,7 @@ public class Note {
     String locationX;
     String locationY;
     String contents;
+
     String mood;
     String picture;
     String createDateStr;
@@ -17,6 +18,7 @@ public class Note {
         this.address = address;
         this.locationX = locationX;
         this.locationY = locationY;
+
         this.contents = contents;
         this.mood = mood;
         this.picture = picture;
@@ -67,9 +69,11 @@ public class Note {
         return contents;
     }
 
+
     public void setContents(String contents) {
         this.contents = contents;
     }
+
 
     public String getMood() {
         return mood;

@@ -167,9 +167,9 @@ public class Fragment3 extends Fragment {
         ArrayList<PieEntry> entries = new ArrayList<>();
 
         String[] keys = {"0", "1", "2", "3", "4"};
-        int[] icons = {R.drawable.feeling1, R.drawable.feeling2,
-                R.drawable.feeling3, R.drawable.feeling4,
-                R.drawable.feeling5};
+        int[] icons = {R.drawable.feeling11, R.drawable.feeling22,
+                R.drawable.feeling33, R.drawable.feeling44,
+                R.drawable.feeling55};
 
         for (int i = 0; i < keys.length; i++) {
             int value = 0;
@@ -210,9 +210,9 @@ public class Fragment3 extends Fragment {
         ArrayList<BarEntry> entries = new ArrayList<>();
 
         String[] keys = {"0", "1", "2", "3", "4", "5", "6"};
-        int[] icons = {R.drawable.smile1_24, R.drawable.smile2_24,
-                R.drawable.smile3_24, R.drawable.smile4_24,
-                R.drawable.smile5_24};
+        int[] icons = {R.drawable.feeling11, R.drawable.feeling22,
+                R.drawable.feeling33, R.drawable.feeling44,
+                R.drawable.feeling55};
 
         for (int i = 0; i < keys.length; i++) {
             float value = 0.0f;

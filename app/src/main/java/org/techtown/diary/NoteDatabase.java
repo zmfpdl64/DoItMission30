@@ -151,6 +151,7 @@ public class NoteDatabase {
 							+ "  LOCATION_X TEXT DEFAULT '', "
 							+ "  LOCATION_Y TEXT DEFAULT '', "
 		        			+ "  CONTENTS TEXT DEFAULT '', "
+
 		        			+ "  MOOD TEXT, "
 		        			+ "  PICTURE TEXT DEFAULT '', "
 		        			+ "  CREATE_DATE TIMESTAMP DEFAULT CURRENT_TIMESTAMP, "
