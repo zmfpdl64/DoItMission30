@@ -209,6 +209,7 @@ public class Fragment3 extends Fragment {
     private void setData2(HashMap<String,Integer> dataHash2) {
         ArrayList<BarEntry> entries = new ArrayList<>();
 
+
         String[] keys = {"0", "1", "2", "3", "4", "5", "6"};
         int[] icons = {R.drawable.feeling11, R.drawable.feeling22,
                 R.drawable.feeling33, R.drawable.feeling44,
