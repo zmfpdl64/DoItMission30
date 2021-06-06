@@ -12,6 +12,7 @@
         android:required="true" />
 
     <application
+        android:requestLegacyExternalStorage="true"
         android:name=".MyApplication"
         android:usesCleartextTraffic="true"
         android:allowBackup="true"

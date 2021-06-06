@@ -359,8 +359,8 @@ public class MainActivity extends AppCompatActivity implements OnTabItemSelected
                     String tmDateText = dateFormat2.format(tmDate);
                     println("기준 시간 : " + tmDateText);
 
-                    for (int i = 0; i < weather.body.datas.size(); i++) {
-                        WeatherItem item = weather.body.datas.get(i);
+                    for (int i = 0; i < weather.body.data.size(); i++) {
+                        WeatherItem item = weather.body.data.get(i);
                         println("#" + i + " 시간 : " + item.hour + "시, " + item.day + "일째");
                         println("  날씨 : " + item.wfKor);
                         println("  기온 : " + item.temp + " C");
@@ -372,7 +372,7 @@ public class MainActivity extends AppCompatActivity implements OnTabItemSelected
                     }
 
                     // set current weather
-                    WeatherItem item = weather.body.datas.get(0);
+                    WeatherItem item = weather.body.data.get(0);
                     currentWeather = item.wfKor;
                     if (fragment2 != null) {
                         fragment2.setWeather(item.wfKor);
