@@ -6,9 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-
 public class health extends Activity {
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.health);
@@ -19,7 +17,6 @@ public class health extends Activity {
         hbtn4 = (Button) findViewById(R.id.hbtn4);
         hbtn5 = (Button) findViewById(R.id.hbtn5);
         hbtn6 = (Button) findViewById(R.id.hbtn6);
-
         hbtn1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), health1.class );

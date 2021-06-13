@@ -19,15 +19,10 @@ public class Fragment4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment4, container, false);
 
-
-
         Button btn1, btn2, btn3, btn4, btn5;
         btn1 = rootView.findViewById(R.id.btn1);
         btn2 = rootView.findViewById(R.id.btn2);
         btn3 = rootView.findViewById(R.id.btn3);
-
-
-
 
         btn1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -49,13 +44,6 @@ public class Fragment4 extends Fragment {
                 startActivity(intent);
             }
         });
-
-
         return rootView;
-    }
-
-    private void initUI(ViewGroup rootView) {
-
-
     }
 }
