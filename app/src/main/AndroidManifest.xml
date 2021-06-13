@@ -11,6 +11,7 @@
     <uses-feature android:name="android.hardware.camera"
         android:required="true" />
 
+
     <application
         android:requestLegacyExternalStorage="true"
         android:name=".MyApplication"
@@ -43,7 +44,15 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/external" />
         </provider>
-
+        <activity android:name=".health" android:label="health 액티비티">
+        </activity>
+        <activity android:name=".health1" android:label="health1 액티비티">
+        </activity>
+        <activity android:name=".health2" android:label="health2 액티비티"/>
+        <activity android:name=".health3" android:label="health2 액티비티"/>
+        <activity android:name=".health4" android:label="health2 액티비티"/>
+        <activity android:name=".health5" android:label="health2 액티비티"/>
+        <activity android:name=".health6" android:label="health2 액티비티"/>
     </application>
 
 </manifest>

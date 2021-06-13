@@ -19,5 +19,10 @@
         android:enabled="true"
         android:icon="@drawable/graph_48"
         android:title="@string/tab_title3" />
+    <item
+        android:id="@+id/tab4"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/hospital"
+        android:title="건강관리" />
 
 </menu>

@@ -148,10 +148,10 @@ public class NoteDatabase {
 		        			+ "  _id INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT, "
 							+ "  WEATHER TEXT DEFAULT '', "
 							+ "  ADDRESS TEXT DEFAULT '', "
-							+ "  LOCATION_X TEXT DEFAULT '', "
-							+ "  LOCATION_Y TEXT DEFAULT '', "
+							+ "  LOCATION_X TEXT DEFAULT '나 로컬x', "
+							+ "  LOCATION_Y TEXT DEFAULT '나 로컬y', "
 		        			+ "  CONTENTS TEXT DEFAULT '', "
-
+							+ "  BODY TEXT DEFAULT '', "
 		        			+ "  MOOD TEXT, "
 		        			+ "  PICTURE TEXT DEFAULT '', "
 		        			+ "  CREATE_DATE TIMESTAMP DEFAULT CURRENT_TIMESTAMP, "

@@ -42,6 +42,7 @@ public class Fragment2 extends Fragment {
     TextView locationTextView;
 
     EditText contentsInput;
+    EditText bodyInput;
 
     ImageView pictureImageView;
 
@@ -115,6 +116,7 @@ public class Fragment2 extends Fragment {
         locationTextView = rootView.findViewById(R.id.locationTextView);
 
         contentsInput = rootView.findViewById(R.id.contentsInput);
+        bodyInput = rootView.findViewById(R.id.bodyInput);
 
         pictureImageView = rootView.findViewById(R.id.pictureImageView);
         pictureImageView.setOnClickListener(new View.OnClickListener() {
@@ -265,6 +267,10 @@ public class Fragment2 extends Fragment {
         contentsInput.setText(data);
     }
 
+    public void setBodys(String data) {
+        bodyInput.setText(data);
+    }
+
     public void setPicture(String picturePath, int sampleSize) {
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inSampleSize = sampleSize;
@@ -296,6 +302,8 @@ public class Fragment2 extends Fragment {
             setAddress(item.getAddress());
             setDateString(item.getCreateDateStr());
             setContents(item.getContents());
+            setBodys(item.getBodys());
+
 
 
 
@@ -545,18 +553,19 @@ public class Fragment2 extends Fragment {
     private void saveNote() {
         String address = locationTextView.getText().toString();
         String contents = contentsInput.getText().toString();
+        String hello = bodyInput.getText().toString();
 
 
         String picturePath = savePicture();
 
         String sql = "insert into " + NoteDatabase.TABLE_NOTE +
-                "(WEATHER, ADDRESS, LOCATION_X, LOCATION_Y, CONTENTS, MOOD, PICTURE) values(" +
+                "(WEATHER, ADDRESS, LOCATION_X, LOCATION_Y, CONTENTS, BODY, MOOD, PICTURE) values(" +
                 "'"+ weatherIndex + "', " +
                 "'"+ address + "', " +
-                "'"+ "" + "', " +
-                "'"+ "" + "', " +
+                "'"+ "기모찌찌맨" + "', " +
+                "'"+ "기모짜짜맨" + "', " +
                 "'"+ contents + "', " +
-
+                "'"+ hello + "', " +
                 "'"+ moodIndex + "', " +
                 "'"+ picturePath + "')";
 
@@ -573,6 +582,7 @@ public class Fragment2 extends Fragment {
         if (item != null) {
             String address = locationTextView.getText().toString();
             String contents = contentsInput.getText().toString();
+            String hello = bodyInput.getText().toString();
 
 
 
@@ -583,10 +593,10 @@ public class Fragment2 extends Fragment {
                     " set " +
                     "   WEATHER = '" + weatherIndex + "'" +
                     "   ,ADDRESS = '" + address + "'" +
-                    "   ,LOCATION_X = '" + "" + "'" +
-                    "   ,LOCATION_Y = '" + "" + "'" +
+                    "   ,LOCATION_X = '" + "hello" + "'" +
+                    "   ,LOCATION_Y = '" + "bye" + "'" +
                     "   ,CONTENTS = '" + contents + "'" +
-
+                    "   ,BODY = '" + hello + "'" +
                     "   ,MOOD = '" + moodIndex + "'" +
                     "   ,PICTURE = '" + picturePath + "'" +
                     " where " +

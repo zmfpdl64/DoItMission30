@@ -7,12 +7,12 @@ public class Note {
     String locationX;
     String locationY;
     String contents;
-
+    String bodys;
     String mood;
     String picture;
     String createDateStr;
 
-    public Note(int _id, String weather, String address, String locationX, String locationY, String contents, String mood, String picture, String createDateStr) {
+    public Note(int _id, String weather, String address, String locationX, String locationY, String contents, String sss, String mood, String picture, String createDateStr) {
         this._id = _id;
         this.weather = weather;
         this.address = address;
@@ -20,6 +20,7 @@ public class Note {
         this.locationY = locationY;
 
         this.contents = contents;
+        this.bodys = sss;
         this.mood = mood;
         this.picture = picture;
         this.createDateStr = createDateStr;
@@ -74,6 +75,9 @@ public class Note {
         this.contents = contents;
     }
 
+   public String getBodys() {
+        return bodys;
+   }
 
     public String getMood() {
         return mood;

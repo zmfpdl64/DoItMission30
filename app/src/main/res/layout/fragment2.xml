@@ -73,7 +73,7 @@
                     android:textSize="32sp" />
 
                 <EditText
-                    android:id="@+id/contentxInput"
+                    android:id="@+id/bodyInput"
                     android:layout_width="match_parent"
                     android:layout_height="205dp"
                     android:hint="내용 입력"
