@@ -14,26 +14,26 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/dogdog"
+        android:src="@drawable/dog2"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1. 계단 오르기를 꺼려한다."/>
+        android:text="1. 침을 많이 흘린다."/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2. 자리에서 느리게 일어난다."/>
+        android:text="2. 구역질을 한다."/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:text="3. 뻣뻣하게 걷는다."/>
+        android:text="3. 변비, 설사를 한다."/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="증상: 관절엽 혹은 발에 통증이 있음"/>
+        android:text="병명: 소화 장애 또는 구강구조가 불편하다는 것입니다."/>
 
 
 

@@ -19,28 +19,51 @@ public class Fragment4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment4, container, false);
 
-        Button btn1, btn2, btn3, btn4, btn5;
-        btn1 = rootView.findViewById(R.id.btn1);
-        btn2 = rootView.findViewById(R.id.btn2);
-        btn3 = rootView.findViewById(R.id.btn3);
+        Button btn1, btn2, btn3, btn4, btn5, btn6;
+        btn1 = rootView.findViewById(R.id.hbtn1);
+        btn2 = rootView.findViewById(R.id.hbtn2);
+        btn3 = rootView.findViewById(R.id.hbtn3);
+        btn4 = rootView.findViewById(R.id.hbtn4);
+        btn5 = rootView.findViewById(R.id.hbtn5);
+        btn6 = rootView.findViewById(R.id.hbtn6);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), health.class);
+                Intent intent = new Intent(getActivity(), health1.class);
                 startActivity(intent);
             }
         });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), health.class);
+                Intent intent = new Intent(getActivity(), health2.class);
                 startActivity(intent);
             }
         });
 
         btn3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), health.class);
+                Intent intent = new Intent(getActivity(), health3.class);
+                startActivity(intent);
+            }
+        });
+        btn4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), health4.class);
+                startActivity(intent);
+            }
+        });
+
+        btn5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), health5.class);
+                startActivity(intent);
+            }
+        });
+
+        btn6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), health6.class);
                 startActivity(intent);
             }
         });

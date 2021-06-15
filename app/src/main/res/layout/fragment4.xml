@@ -2,7 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_marginBottom="60dp"
+    android:layout_marginBottom="40dp"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
@@ -10,11 +10,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="280dp"
-        android:layout_margin="50dp">
+        >
+
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/dogdog"/>
+            android:src="@drawable/dog8" />
 
 
     </LinearLayout>
@@ -22,18 +23,34 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn1"
-        android:text="건강이상"/>
+        android:id="@+id/hbtn1"
+        android:text="절뚝거림"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn2"
-        android:text="일정"/>
+        android:id="@+id/hbtn2"
+        android:text="낑낑거림"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn3"
-        android:text="투약기록"/>
+        android:id="@+id/hbtn3"
+        android:text="식욕감소"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hbtn4"
+        android:text="헐떡거림"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hbtn5"
+        android:text="수면 패턴 변화"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hbtn6"
+        android:text="행동의 변화"/>
+
 
 </LinearLayout>
 

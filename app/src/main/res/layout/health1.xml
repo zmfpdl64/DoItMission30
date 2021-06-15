@@ -13,7 +13,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/dogdog"
+        android:src="@drawable/dog4"
         />
     <TextView
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="증상: 관절엽 혹은 발에 통증이 있음"/>
+        android:text="병명: 관절엽 혹은 발에 통증이 있음"/>
 
 
 

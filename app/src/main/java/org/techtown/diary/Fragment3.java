@@ -94,30 +94,7 @@ public class Fragment3 extends Fragment {
         chart.setEntryLabelTextSize(10f);
 
 
-        // setting for second graph
-        chart2 = rootView.findViewById(R.id.chart2);
-        chart2.setDrawValueAboveBar(true);
-        chart2.getDescription().setEnabled(false);
-        chart2.setDrawGridBackground(false);
 
-        XAxis xAxis = chart2.getXAxis();
-        xAxis.setEnabled(false);
-
-        YAxis leftAxis = chart2.getAxisLeft();
-        leftAxis.setLabelCount(6, false);
-        leftAxis.setAxisMinimum(0.0f);
-        leftAxis.setGranularityEnabled(true);
-        leftAxis.setGranularity(1f);
-
-        YAxis rightAxis = chart2.getAxisRight();
-        rightAxis.setEnabled(false);
-
-        Legend legend2 = chart2.getLegend();
-        legend2.setEnabled(false);
-
-        chart2.animateXY(1500, 1500);
-
-        // setting for third graph
         chart3 = rootView.findViewById(R.id.chart3);
 
         chart3.getDescription().setEnabled(false);
@@ -206,57 +183,7 @@ public class Fragment3 extends Fragment {
         chart.invalidate();
     }
 
-    private void setData2(HashMap<String,Integer> dataHash2) {
-        ArrayList<BarEntry> entries = new ArrayList<>();
 
-
-        String[] keys = {"0", "1", "2", "3", "4", "5", "6"};
-        int[] icons = {R.drawable.feeling11, R.drawable.feeling22,
-                R.drawable.feeling33, R.drawable.feeling44,
-                R.drawable.feeling55};
-
-        for (int i = 0; i < keys.length; i++) {
-            float value = 0.0f;
-            Integer outValue = dataHash2.get(keys[i]);
-            AppConstants.println("#" + i + " -> " + outValue);
-            if (outValue != null) {
-                value = outValue.floatValue();
-            }
-
-            Drawable drawable = null;
-            if (value <= 1.0f) {
-                drawable = getResources().getDrawable(icons[0]);
-            } else if (value <= 2.0f) {
-                drawable = getResources().getDrawable(icons[1]);
-            } else if (value <= 3.0f) {
-                drawable = getResources().getDrawable(icons[2]);
-            } else if (value <= 4.0f) {
-                drawable = getResources().getDrawable(icons[3]);
-            } else if (value <= 5.0f) {
-                drawable = getResources().getDrawable(icons[4]);
-            }
-
-            entries.add(new BarEntry(Float.valueOf(String.valueOf(i+1)), value, drawable));
-        }
-
-        BarDataSet dataSet2 = new BarDataSet(entries, getResources().getString(R.string.graph2_title));
-        dataSet2.setColor(Color.rgb(240, 120, 124));
-
-        ArrayList<Integer> colors = new ArrayList<>();
-        for (int c : ColorTemplate.JOYFUL_COLORS) {
-            colors.add(c);
-        }
-        dataSet2.setColors(colors);
-        dataSet2.setIconsOffset(new MPPointF(0, -10));
-
-        BarData data = new BarData(dataSet2);
-        data.setValueTextSize(10f);
-        data.setDrawValues(false);
-        data.setBarWidth(0.8f);
-
-        chart2.setData(data);
-        chart2.invalidate();
-    }
 
     private void setData3(ArrayList<Float> dataKeys3, ArrayList<Integer> dataValues3) {
         ArrayList<Entry> entries = new ArrayList<>();
@@ -324,33 +251,7 @@ public class Fragment3 extends Fragment {
 
         setData1(dataHash1);
 
-        // second graph
-        sql = "select strftime('%w', create_date) " +
-                "  , avg(mood) " +
-                "from " + NoteDatabase.TABLE_NOTE + " " +
-                "where create_date > '" + getMonthBefore(1) + "' " +
-                "  and create_date < '" + getTomorrow() + "' " +
-                "group by strftime('%w', create_date)";
 
-        cursor = database.rawQuery(sql);
-        recordCount = cursor.getCount();
-        AppConstants.println("recordCount : " + recordCount);
-
-        HashMap<String,Integer> dataHash2 = new HashMap<String,Integer>();
-        for (int i = 0; i < recordCount; i++) {
-            cursor.moveToNext();
-
-            String weekDay = cursor.getString(0);
-            int moodCount = cursor.getInt(1);
-
-            AppConstants.println("#" + i + " -> " + weekDay + ", " + moodCount);
-            dataHash2.put(weekDay, moodCount);
-        }
-
-        setData2(dataHash2);
-
-
-        // third graph
         sql = "select strftime('%Y-%m-%d', create_date) " +
                 "  , avg(cast(mood as real)) " +
                 "from " + NoteDatabase.TABLE_NOTE + " " +

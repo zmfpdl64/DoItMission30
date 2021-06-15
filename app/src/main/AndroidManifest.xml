@@ -44,8 +44,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/external" />
         </provider>
-        <activity android:name=".health" android:label="health 액티비티">
-        </activity>
+
         <activity android:name=".health1" android:label="health1 액티비티">
         </activity>
         <activity android:name=".health2" android:label="health2 액티비티"/>

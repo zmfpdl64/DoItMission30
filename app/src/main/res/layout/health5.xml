@@ -14,26 +14,23 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/dogdog"
+        android:src="@drawable/dog6"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1. 계단 오르기를 꺼려한다."/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="2. 자리에서 느리게 일어난다."/>
+        android:text="1. 계속 빙글빙글 돈다."/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:text="3. 뻣뻣하게 걷는다."/>
+        android:text="2. 강아지가 잠을 잘 못잔다."/>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="증상: 관절엽 혹은 발에 통증이 있음"/>
+        android:text="증상: 스트레스 증가로 인한 만성질병"/>
 
 
 
